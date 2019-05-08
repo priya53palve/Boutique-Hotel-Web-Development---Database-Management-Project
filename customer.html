@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <title>TAJ Hotel</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <link href="Style.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body background="taj.jpg">
+<section id="customer">
+        <div class="container">
+	<div id="branding" >
+             <h1><span class="highlight" style:"font-size:65px;">Taj</span> Hotel</h1>
+            </div>
+            <h1>Enter Paying Customer details</h1>
+			<form name="pyform" method="POST" action="http://localhost/cgi-bin/customer_info.py">
+			<table>
+				<tr>
+					<td>first_name</td>
+					<td><input type="text" required name="first_name" style="width:150px" size="72"/></td>
+				</tr>
+                                <tr>
+					<td>last_name</td>
+					<td><input type="text" name="last_name" size="72" style="width:150px"/></td>
+				</tr>
+				<tr>
+					<td>age</td>
+					<td><input type="text" name="age" size="72" style="width:150px"/></td>
+				</tr>
+				<tr>
+					<td>identity</td>
+					<td><input type="text" required name="id_prof" size="72" style="width:150px"/></td>
+				</tr>
+				<tr>
+					<td>event_id</td>
+					<td><input type="text" required name="event_id" size="72" style="width:150px"/></td>
+				</tr>
+                                <tr>
+					<td>room_no</td>
+					<td><input type="text" required name="room_no" size="72" style="width:150px"/></td>
+				</tr>
+			</table>
+			
+			<p><input type="submit" name="Add Customer" value="Add Customer" style="height:40px;width:100px"/></p>
+			</form>
+			
+</body>
+</html>

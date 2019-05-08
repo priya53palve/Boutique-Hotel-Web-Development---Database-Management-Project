@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <title>TAJ Hotel</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <link href="Style.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body background="taj.jpg">
+
+    <header>
+
+        <div class="container">
+            <div id="branding" >
+             <h1><span class="highlight" style:"font-size:65px;">Taj</span> Hotel</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="execute.html"><button>Execute Query</button></a>
+		    </li><br>
+
+                    <li><form name="pyform" method="POST" action="http://localhost/cgi-bin/available.py">
+    			<input type="submit" value="Available Rooms" /></form>	
+		    </li><br>
+		    <li><form name="pyform" method="POST" action="http://localhost/cgi-bin/reserved.py">
+    			<input type="submit" value="Reserved Rooms" /></form>	
+		    </li>	
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+		
+</body>
+</html>

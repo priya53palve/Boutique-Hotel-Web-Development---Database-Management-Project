@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <title>TAJ Hotel</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <link href="Style.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body background="taj.jpg">
+<section id="booking">
+<div id="branding" >
+             <h1><span class="highlight" style:"font-size:65px;">Taj</span> Hotel</h1>
+            </div>
+			<form name="pyform" method="POST" action="http://localhost/cgi-bin/event.py">
+                        <div class="reveal-if-active">
+			<h1>Enter Event details</h1>
+			<table>
+				<tr>
+					<td>event_type</td>
+					<td><input list="event_type" name="e_type" style="width:150px"/></td>
+					<datalist id="event_type">
+						<option value="reception">
+						<option value="marriage">
+						<Option value="corporate">
+						<Option value="birthday">
+					</datalist>
+				</tr>
+				<tr>
+					<td>event_id</td>
+					<td><input type="text" name="event_id" style="width:150px"/></td>
+				</tr>
+                                <tr>
+					<td>event_date</td>
+					<td><input type="date" name="e_date" style="width:150px"/></td>
+				</tr>
+			</table>
+			</div>
+			
+			<p><input type="submit" name="Add Event" value="Add event" style="height:40px;width:100px"/></p>
+			</form>
+			
+</body>
+</html>

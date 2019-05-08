@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <title>TAJ Hotel</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <link href="Style.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body background="taj.jpg">
+<section id="rooms">
+        <div class="container">
+<div id="branding" >
+             <h1><span class="highlight" style:"font-size:65px;">Taj</span> Hotel</h1>
+            </div>
+            <h1>Enter Room Details</h1>
+			<form name="pyform" method="POST" action="http://localhost/cgi-bin/rooms.py">
+			<table>
+                                <tr>
+					<td>Room No</td>
+					<td><input list="room_no" name="room_no" style="width:150px"/></td>
+				</tr>
+                                <tr>
+					<td>Room Type</td>
+					<td><input list="r_type" name="r_type" style="width:150px"/></td>
+					<datalist id="r_type">
+						<option value="party hall">
+						<option value="single bed">
+						<Option value="banquate hall">
+						<Option value="double bed">
+						<Option value="queensize bed">
+                                                <Option value="kingsize bed">
+                                                <Option value="event hall">
+                                                <Option value="delux room">
+					</datalist>
+				</tr>
+                                <tr>
+					<td>Room Location</td>
+					<td><input list="r_location" name="r_location" style="width:150px"/></td>
+					<datalist id="r_location">
+						<option value="1st floor">
+						<option value="2nd floor">
+						<Option value="3rd floor">
+						<Option value="4th floor">
+						<Option value="5th floor">
+					</datalist>
+				</tr>
+                                <tr>
+					<td>price</td>
+					<td><input type="text" required name="price" size="72" style="width:150px"/></td
+				</tr>
+                                <tr>
+					<td>max_occu</td>
+					<td><input type="text" required name="max_occu" size="72" style="width:150px"/></td
+				</tr>
+                                 <tr>
+					<td>Dependents</td>
+					<td><input type="text" required name="dependents" size="72" style="width:150px"/></td
+				</tr>
+			</table>
+			
+			<p><input type="submit" name="Add Room" value="Add Room" style="height:40px;width:100px"/></p>
+			</form>
+			
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <title>TAJ Hotel</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <link href="Style.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body background="taj.jpg">
+<section id="payment">
+<div id="branding" >
+             <h1><span class="highlight" style:"font-size:65px;">Taj</span> Hotel</h1>
+            </div>
+			<form name="pyform" method="POST" action="http://localhost/cgi-bin/payment.py">
+                        <div class="reveal-if-active">
+			<h1>Enter Payment details</h1>
+			<table>
+				<tr>
+					<td>Payment Type</td>
+					<td><input list="pay_type" name="pay_type"/></td>
+					<datalist id="pay_type">
+						<option value="credit">
+						<option value="debit">
+					</datalist>
+				</tr>
+				<tr>
+					<td>Booking Id</td>
+					<td><input type="text" name="bid"/></td>
+				</tr>
+                                <tr>
+					<td>Discount</td>
+					<td><input type="text" name="discount"/></td>
+				</tr>
+                                <tr>
+					<td>Total</td>
+					<td><input type="text" name="total"/></td>
+				</tr>
+			</table>
+			</div>
+			
+			<p><input type="submit" name="Add Payment" value="Add payment" style="height:40px;width:100px"/></p>
+			</form>
+			
+</body>
+</html>

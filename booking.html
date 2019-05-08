@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <title>TAJ Hotel</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <link href="Style.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body background="taj.jpg">
+<section id="booking">
+        <div class="container">
+	<div id="branding" >
+             <h1><span class="highlight" style:"font-size:65px;">Taj</span> Hotel</h1>
+            </div>
+            <h1>Enter Booking details</h1>
+			<form name="pyform" method="POST" action="http://localhost/cgi-bin/booking.py">
+			<table>
+				<tr>
+					<td>Booking_Id</td>
+					<td><input type="text" required name="bid" size="72"style="width:150px"/></td>
+				</tr>
+				<tr>
+					<td>Event_ID</td>
+					<td><input type="text" required name="event_id" size="72" style="width:150px"/></td>
+				</tr>
+                                <tr>
+					<td>Room_No</td>
+					<td><input type="text" name="room_no" size="72" style="width:150px"/></td>
+				</tr>
+				<tr>
+					<td>No_Guest</td>
+					<td><input type="text" name="no_guest" size="72" style="width:150px"/></td>
+				</tr>
+				<tr>
+					<td>Checkin_Date</td>
+					<td><input type="date" required name="checkin" size="72" style="width:150px"/></td>
+				</tr>
+				<tr>
+					<td>Checkout_Date</td>
+					<td><input type="date" required name="checkout" size="72" style="width:150px"/></td>
+				</tr>
+				<tr>
+                                        <td>Customer_Id</td>
+					<td><input type="text" name="cid" size="72" style="width:150px"/></td>
+				</tr>
+			</table>
+			
+			
+		
+			<p><input type="submit" name="Add Booking" value="Add Booking" style="height:40px;width:100px"/></p>
+			</form>
+			
+</body>
+</html>
